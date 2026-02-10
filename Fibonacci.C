@@ -7,13 +7,15 @@ void fibonacci(int n)
     return 1;
     
     int a=0,b=1;
+    printf("Fibonacci series is:");
     for(int i=2;i<=n;i++)
     {
         int c=a+b;
         a=b;
         b=c;
+        printf("%d ",b);
     }
-    printf("%d",b);
+    printf("\nTotal:%d",b);
 }
 
 int main() {
